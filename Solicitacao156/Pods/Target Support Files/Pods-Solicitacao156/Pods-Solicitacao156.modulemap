@@ -1,0 +1,6 @@
+framework module Pods_Solicitacao156 {
+  umbrella header "Pods-Solicitacao156-umbrella.h"
+
+  export *
+  module * { export * }
+}
