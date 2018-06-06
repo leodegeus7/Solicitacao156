@@ -10,8 +10,13 @@
 		1B21A28E8443113B9A37AF15 /* Pods_Solicitacao156Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAA43D9AA551AA6D8ED29491 /* Pods_Solicitacao156Tests.framework */; };
 		6A4B682AF945C0B3FA390AAF /* Pods_Solicitacao156UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CC8A1A274BE778372EAB669 /* Pods_Solicitacao156UITests.framework */; };
 		70B99C9C9083A5EACC12B2F2 /* Pods_Solicitacao156.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 749FD0DB2CDE14CC088B9D62 /* Pods_Solicitacao156.framework */; };
+		CD6C620F20B0DE90001754A5 /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6C620E20B0DE90001754A5 /* Entry.swift */; };
+		CD6C621120B0E087001754A5 /* Requisition.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6C621020B0E087001754A5 /* Requisition.swift */; };
+		CD6C621320B0E20F001754A5 /* SolicitacoesCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6C621220B0E20F001754A5 /* SolicitacoesCellTableViewCell.swift */; };
+		CD6C621520B0E5DB001754A5 /* EntriesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6C621420B0E5DB001754A5 /* EntriesTableViewController.swift */; };
+		CD6C621720B0E791001754A5 /* EntriesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6C621620B0E791001754A5 /* EntriesTableViewCell.swift */; };
 		CDE1EA6F20A3CA4A00B459D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE1EA6E20A3CA4A00B459D7 /* AppDelegate.swift */; };
-		CDE1EA7120A3CA4A00B459D7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE1EA7020A3CA4A00B459D7 /* ViewController.swift */; };
+		CDE1EA7120A3CA4A00B459D7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE1EA7020A3CA4A00B459D7 /* LoginViewController.swift */; };
 		CDE1EA7420A3CA4A00B459D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDE1EA7220A3CA4A00B459D7 /* Main.storyboard */; };
 		CDE1EA7620A3CA4C00B459D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDE1EA7520A3CA4C00B459D7 /* Assets.xcassets */; };
 		CDE1EA7920A3CA4C00B459D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDE1EA7720A3CA4C00B459D7 /* LaunchScreen.storyboard */; };
@@ -21,6 +26,12 @@
 		CDE1EAA820A4F3DE00B459D7 /* KeychainConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE1EAA620A4F3DE00B459D7 /* KeychainConfiguration.swift */; };
 		CDE1EAA920A4F3DE00B459D7 /* KeychainTokenItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE1EAA720A4F3DE00B459D7 /* KeychainTokenItem.swift */; };
 		CDE1EAAB20A4F4E300B459D7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE1EAAA20A4F4E300B459D7 /* Constants.swift */; };
+		CDE1EAAD20A4FAEE00B459D7 /* CompleteInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE1EAAC20A4FAEE00B459D7 /* CompleteInfoViewController.swift */; };
+		CDE1EAAF20A4FFFE00B459D7 /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE1EAAE20A4FFFE00B459D7 /* Singleton.swift */; };
+		CDE1EAB820A66F5F00B459D7 /* DatabaseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE1EAB720A66F5F00B459D7 /* DatabaseHelper.swift */; };
+		CDE1EABC20A682FC00B459D7 /* SolicitacoesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE1EABB20A682FC00B459D7 /* SolicitacoesTableViewController.swift */; };
+		CDFB6D6720B1DBBA003F721F /* NetworkSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFB6D6620B1DBBA003F721F /* NetworkSetup.swift */; };
+		CDFB6D6920B1DDAF003F721F /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFB6D6820B1DDAF003F721F /* Util.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,9 +61,14 @@
 		78F37D538A6B7BBB3964BEC0 /* Pods-Solicitacao156Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Solicitacao156Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Solicitacao156Tests/Pods-Solicitacao156Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		BB01A5CEC2148A69A7AE4B42 /* Pods-Solicitacao156.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Solicitacao156.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Solicitacao156/Pods-Solicitacao156.debug.xcconfig"; sourceTree = "<group>"; };
 		CAA43D9AA551AA6D8ED29491 /* Pods_Solicitacao156Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Solicitacao156Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD6C620E20B0DE90001754A5 /* Entry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
+		CD6C621020B0E087001754A5 /* Requisition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Requisition.swift; sourceTree = "<group>"; };
+		CD6C621220B0E20F001754A5 /* SolicitacoesCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolicitacoesCellTableViewCell.swift; sourceTree = "<group>"; };
+		CD6C621420B0E5DB001754A5 /* EntriesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntriesTableViewController.swift; sourceTree = "<group>"; };
+		CD6C621620B0E791001754A5 /* EntriesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntriesTableViewCell.swift; sourceTree = "<group>"; };
 		CDE1EA6B20A3CA4A00B459D7 /* Solicitacao156.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Solicitacao156.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDE1EA6E20A3CA4A00B459D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CDE1EA7020A3CA4A00B459D7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CDE1EA7020A3CA4A00B459D7 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		CDE1EA7320A3CA4A00B459D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CDE1EA7520A3CA4C00B459D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CDE1EA7820A3CA4C00B459D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -68,6 +84,12 @@
 		CDE1EAA620A4F3DE00B459D7 /* KeychainConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainConfiguration.swift; sourceTree = "<group>"; };
 		CDE1EAA720A4F3DE00B459D7 /* KeychainTokenItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainTokenItem.swift; sourceTree = "<group>"; };
 		CDE1EAAA20A4F4E300B459D7 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		CDE1EAAC20A4FAEE00B459D7 /* CompleteInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompleteInfoViewController.swift; sourceTree = "<group>"; };
+		CDE1EAAE20A4FFFE00B459D7 /* Singleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Singleton.swift; sourceTree = "<group>"; };
+		CDE1EAB720A66F5F00B459D7 /* DatabaseHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseHelper.swift; sourceTree = "<group>"; };
+		CDE1EABB20A682FC00B459D7 /* SolicitacoesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolicitacoesTableViewController.swift; sourceTree = "<group>"; };
+		CDFB6D6620B1DBBA003F721F /* NetworkSetup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkSetup.swift; sourceTree = "<group>"; };
+		CDFB6D6820B1DDAF003F721F /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,16 +155,26 @@
 		CDE1EA6D20A3CA4A00B459D7 /* Solicitacao156 */ = {
 			isa = PBXGroup;
 			children = (
+				CDE1EAB620A66F1F00B459D7 /* Network */,
 				CDE1EAA420A4D2CC00B459D7 /* Solicitacao156.entitlements */,
 				CDE1EA6E20A3CA4A00B459D7 /* AppDelegate.swift */,
 				CDE1EAAA20A4F4E300B459D7 /* Constants.swift */,
-				CDE1EA7020A3CA4A00B459D7 /* ViewController.swift */,
+				CDE1EA7020A3CA4A00B459D7 /* LoginViewController.swift */,
 				CDE1EAA520A4F3DE00B459D7 /* Keychain */,
 				CDE1EA7220A3CA4A00B459D7 /* Main.storyboard */,
 				CDE1EA7520A3CA4C00B459D7 /* Assets.xcassets */,
 				CDE1EA9C20A3CA7300B459D7 /* GoogleService-Info.plist */,
 				CDE1EA7720A3CA4C00B459D7 /* LaunchScreen.storyboard */,
 				CDE1EA7A20A3CA4C00B459D7 /* Info.plist */,
+				CDE1EAAC20A4FAEE00B459D7 /* CompleteInfoViewController.swift */,
+				CDE1EAAE20A4FFFE00B459D7 /* Singleton.swift */,
+				CDE1EABB20A682FC00B459D7 /* SolicitacoesTableViewController.swift */,
+				CD6C620E20B0DE90001754A5 /* Entry.swift */,
+				CD6C621020B0E087001754A5 /* Requisition.swift */,
+				CD6C621220B0E20F001754A5 /* SolicitacoesCellTableViewCell.swift */,
+				CD6C621420B0E5DB001754A5 /* EntriesTableViewController.swift */,
+				CD6C621620B0E791001754A5 /* EntriesTableViewCell.swift */,
+				CDFB6D6820B1DDAF003F721F /* Util.swift */,
 			);
 			path = Solicitacao156;
 			sourceTree = "<group>";
@@ -172,6 +204,15 @@
 				CDE1EAA720A4F3DE00B459D7 /* KeychainTokenItem.swift */,
 			);
 			path = Keychain;
+			sourceTree = "<group>";
+		};
+		CDE1EAB620A66F1F00B459D7 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				CDE1EAB720A66F5F00B459D7 /* DatabaseHelper.swift */,
+				CDFB6D6620B1DBBA003F721F /* NetworkSetup.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 		E9BD3567D8F65470031299DD /* Pods */ = {
@@ -335,8 +376,10 @@
 				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
 				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
 				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -344,8 +387,10 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -416,11 +461,13 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-Solicitacao156/Pods-Solicitacao156-resources.sh",
 				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseAuthUI.bundle",
 				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseFacebookAuthUI.bundle",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseAuthUI.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseFacebookAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -434,10 +481,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD6C620F20B0DE90001754A5 /* Entry.swift in Sources */,
 				CDE1EAAB20A4F4E300B459D7 /* Constants.swift in Sources */,
+				CDE1EAAF20A4FFFE00B459D7 /* Singleton.swift in Sources */,
+				CDFB6D6920B1DDAF003F721F /* Util.swift in Sources */,
 				CDE1EAA820A4F3DE00B459D7 /* KeychainConfiguration.swift in Sources */,
-				CDE1EA7120A3CA4A00B459D7 /* ViewController.swift in Sources */,
+				CDE1EA7120A3CA4A00B459D7 /* LoginViewController.swift in Sources */,
+				CDE1EABC20A682FC00B459D7 /* SolicitacoesTableViewController.swift in Sources */,
+				CDE1EAB820A66F5F00B459D7 /* DatabaseHelper.swift in Sources */,
+				CD6C621320B0E20F001754A5 /* SolicitacoesCellTableViewCell.swift in Sources */,
 				CDE1EAA920A4F3DE00B459D7 /* KeychainTokenItem.swift in Sources */,
+				CDE1EAAD20A4FAEE00B459D7 /* CompleteInfoViewController.swift in Sources */,
+				CD6C621520B0E5DB001754A5 /* EntriesTableViewController.swift in Sources */,
+				CDFB6D6720B1DBBA003F721F /* NetworkSetup.swift in Sources */,
+				CD6C621120B0E087001754A5 /* Requisition.swift in Sources */,
+				CD6C621720B0E791001754A5 /* EntriesTableViewCell.swift in Sources */,
 				CDE1EA6F20A3CA4A00B459D7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

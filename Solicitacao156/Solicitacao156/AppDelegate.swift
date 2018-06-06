@@ -9,7 +9,7 @@
 import UIKit
 import Firebase
 import FBSDKLoginKit
-import FirebaseAuthUI
+import FirebaseUI
 import FBSDKCoreKit
 import GTMSessionFetcher
 

@@ -10,5 +10,55 @@
             </PersistentString>
          </PersistentStrings>
       </ContextState>
+      <ContextState
+         contextName = "closure #1 in ViewController.viewDidLoad():ViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "user!.email!">
+            </PersistentString>
+            <PersistentString
+               value = "user?.displayName!">
+            </PersistentString>
+            <PersistentString
+               value = "error!">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in SolicitacoesTableViewController.getRequisition(num:completion:):SolicitacoesTableViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in SolicitacoesTableViewController.viewDidLoad():SolicitacoesTableViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "snapshot.value(forKey: &quot;hour&quot;) as! String">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "SolicitacoesTableViewController.prepare(for:sender:):SolicitacoesTableViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in closure #2 in SolicitacoesTableViewController.createAlert():SolicitacoesTableViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "DatabaseHelper.addRequisiton(num:):DatabaseHelper.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "&quot;users/\(Singleton.shared.user.uid)/requisiton/\(num)&quot;">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "EntriesTableViewController.tableView(_:cellForRowAt:):EntriesTableViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "requisition.entries[indexPath.row].date">
+            </PersistentString>
+            <PersistentString
+               value = "dateFormatter.string(from: requisition.entries[indexPath.row].date)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
    </ContextStates>
 </VariablesViewState>

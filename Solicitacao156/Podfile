@@ -10,6 +10,8 @@ target 'Solicitacao156' do
   pod 'Firebase/Core'
   pod 'FirebaseUI/Auth'
   pod 'FirebaseUI/Facebook'
+  pod 'Firebase/Database'
+  pod 'GoogleSignIn'
   target 'Solicitacao156Tests' do
     inherit! :search_paths
     # Pods for testing
