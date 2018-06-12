@@ -1,0 +1,88 @@
+{
+    "data": [
+              {
+              "name": "SOLICITACAO",
+              "description": "Nº da solicitação efetuada na Central de Atendimento 156"
+              },
+              {
+              "name": "TIPO",
+              "description": "Tipo da solicitação. Ex: solicitação, elogio, reclamação,etc.."
+              },
+              {
+              "name": "ORGAO",
+              "description": "Órgão em que cadastrador está lotado"
+              },
+              {
+              "name": "DATA",
+              "description": "Data da criação da solicitação"
+              },
+              {
+              "name": "HORARIO",
+              "description": "Hora da criação da solicitação"
+              },
+              {
+              "name": "ASSUNTO",
+              "description": "Assunto ao qual a solicitação se refere"
+              },
+              {
+              "name": "SUBDIVISAO",
+              "description": "Subdivisão do assunto ao qual a solicitação se refere"
+              },
+              {
+              "name": "DESCRICAO",
+              "description": "Descrição da solicitação"
+              },
+              {
+              "name": "LOGRADOURO_ASS",
+              "description": "Logradouro do assunto da solicitação"
+              },
+              {
+              "name": "BAIRRO_ASS",
+              "description": "Bairro do assunto da solicitação"
+              },
+              {
+              "name": "REGIONAL_ASS",
+              "description": "Regional do assunto da solicitação"
+              },
+              {
+              "name": "MEIO_RESPOSTA",
+              "description": "Meio de resposta escolhido para resposta a sua solicitação"
+              },
+              {
+              "name": "OBSERVACAO",
+              "description": "Observações referentes a solicitação"
+              },
+              {
+              "name": "SEXO",
+              "description": "M para sexo masculino e F para feminino"
+              },
+              {
+              "name": "BAIRRO_CIDADAO",
+              "description": "Bairro do domicilio do cidadão"
+              },
+              {
+              "name": "REGIONAL_CIDADAO",
+              "description": "Regional do domicilio do cidadão"
+              },
+              {
+              "name": "DATA_NASC",
+              "description": "Data de nascimento do cidadão"
+              },
+              {
+              "name": "TIPO_CIDADAO",
+              "description": "Tipo do cidadão solicitante"
+              },
+              {
+              "name": "HISTORICO",
+              "description": "Último historico da solicitação"
+              },
+              {
+              "name": "ORGAO_RESP ou RSO",
+              "description": "Órgão responsável pela informação"
+              },
+              {
+              "name": "RESPOSTA_FINAL",
+              "description": "Descrição da resposta"
+              }
+              ]
+}

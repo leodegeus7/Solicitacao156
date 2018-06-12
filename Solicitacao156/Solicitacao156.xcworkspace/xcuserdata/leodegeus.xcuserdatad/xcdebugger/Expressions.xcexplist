@@ -3,29 +3,18 @@
    version = "1.0">
    <ContextStates>
       <ContextState
-         contextName = "ViewController.authUI(_:didSignInWith:error:):ViewController.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "user.displayName">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
          contextName = "closure #1 in ViewController.viewDidLoad():ViewController.swift">
          <PersistentStrings>
             <PersistentString
-               value = "user!.email!">
+               value = "error!">
             </PersistentString>
             <PersistentString
                value = "user?.displayName!">
             </PersistentString>
             <PersistentString
-               value = "error!">
+               value = "user!.email!">
             </PersistentString>
          </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "closure #1 in SolicitacoesTableViewController.getRequisition(num:completion:):SolicitacoesTableViewController.swift">
       </ContextState>
       <ContextState
          contextName = "closure #1 in SolicitacoesTableViewController.viewDidLoad():SolicitacoesTableViewController.swift">
@@ -36,10 +25,7 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "SolicitacoesTableViewController.prepare(for:sender:):SolicitacoesTableViewController.swift">
-      </ContextState>
-      <ContextState
-         contextName = "closure #1 in closure #2 in SolicitacoesTableViewController.createAlert():SolicitacoesTableViewController.swift">
+         contextName = "closure #1 in SolicitacoesTableViewController.getRequisition(num:completion:):SolicitacoesTableViewController.swift">
       </ContextState>
       <ContextState
          contextName = "DatabaseHelper.addRequisiton(num:):DatabaseHelper.swift">
@@ -59,6 +45,45 @@
                value = "dateFormatter.string(from: requisition.entries[indexPath.row].date)">
             </PersistentString>
          </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in closure #2 in SolicitacoesTableViewController.createAlert():SolicitacoesTableViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "ViewController.authUI(_:didSignInWith:error:):ViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "user.displayName">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "AppDelegate.retrieveFunction():AppDelegate.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "RemoteConfig.remoteConfig().configValue(forKey: &quot;color2&quot;).stringValue">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "SolicitacoesTableViewController.prepare(for:sender:):SolicitacoesTableViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "ContatosTableViewController.numberOfSections(in:):ContatosTableViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "contacts[key]!.count">
+            </PersistentString>
+            <PersistentString
+               value = "contacts.count">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ContatosTableViewController.getData():ContatosTableViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in AppDelegate.application(_:didFinishLaunchingWithOptions:):AppDelegate.swift">
       </ContextState>
    </ContextStates>
 </VariablesViewState>

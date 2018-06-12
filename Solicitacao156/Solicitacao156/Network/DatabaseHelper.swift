@@ -52,13 +52,13 @@ class DatabaseHelper: NSObject {
         }
     }
     
-    func addRequisiton(requisition:Requisition) -> Bool {
+    func addRequisiton(requisition:Requisition, firstDate:String) -> Bool {
         if let _ = Singleton.shared.user {
             let ref = Database.database()
             let usersRef = ref.reference(withPath: "users")
             let myUser = usersRef.child("\(Singleton.shared.user.uid)")
             let requisitonArray = myUser.child("requisiton")
-            let array = ["date":Date().timeIntervalSince1970]
+            let array = ["date":Date().timeIntervalSince1970,"firstDate":firstDate] as [String : Any]
             requisitonArray.child("\(requisition.numberId)").setValue(array)
             return true
         } else {

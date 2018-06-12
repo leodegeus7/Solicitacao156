@@ -1,0 +1,178 @@
+{
+    "data": [
+              {
+              "name": "12º Batalhão de Polícia Militar - Sede",
+              "category": "12 Batalhão",
+              "address": "Rua Curupaitis, 1132 - Santa Quitéria - Curitiba - PR",
+              "fone": "(41)32698100"
+              },
+              {
+              "name": "1ª Companhia",
+              "category": "12 Batalhão",
+              "address": "Passeio Público - Centro - Curitiba/PR",
+              "fone": "(41) 3323-6116"
+              },
+              {
+              "name": "2ª Companhia",
+              "category": "12 Batalhão",
+              "address": "Rua Alferes Ângelo Sampaio, 1564 - Batel - Curitiba/PR",
+              "fone": "(41) 3223-2605"
+              },
+              {
+              "name": "3ª Companhia",
+              "category": "12 Batalhão",
+              "address": "Rua Bocaiúva, 891 - Campo Comprido - Curitiba/PR",
+              "fone": "(41) 3345-5266"
+              },
+              {
+              "name": "4ª Companhia",
+              "category": "12 Batalhão",
+              "address": "Av. Toaldo Túlio, 2362 - São Braz - Curitiba/PR",
+              "fone": "(41) 3272-0719"
+              },
+              {
+              "name": "5ª Companhia",
+              "category": "12 Batalhão",
+              "address": "Rua Imaculada Conceição, 888 - Prado Velho - Curitiba/PR",
+              "fone": "(41) 3332-1162"
+              },
+              {
+              "name": "13º BPM - Sede",
+              "category": "13 Batalhão",
+              "address": "Rua Sebastião Malucelli, nº 54 - Bairro Novo Mundo - Curitiba - PR - CEP 81150-270",
+              "fone": "(41) 3212-2200"
+              },
+              {
+              "name": "1ª Companhia",
+              "category": "13 Batalhão",
+              "address": "Rua São Paulo, s/n - Guaíra - Praça Bento Munhoz da Rocha Neto - Curitiba - PR",
+              "fone": "(41) 3334-4609"
+              },
+              {
+              "name": "2ª Companhia",
+              "category": "13 Batalhão",
+              "address": "Rodovia 116, km 111, nº 22.881 - Tatuquara - Curitiba - PR (A Companhia fica localizada dentro do CEASA)",
+              "fone": "(41) 3396-3325"
+              },
+              {
+              "name": "3ª Companhia",
+              "category": "13 Batalhão",
+              "address": "Rua Dr. Waldomiro Pereira, 42 - Capão Raso - Curitiba - PR",
+              "fone": "(41) 3248-2208"
+              },
+              {
+              "name": "4ª Companhia",
+              "category": "13 Batalhão",
+              "address": "Rua Mandirituba, 1429 - Sítio Cercado - Curitiba - PR",
+              "fone": "(41) 3564-0628"
+              },
+              {
+              "name": "UPS Osternack",
+              "category": "13 Batalhão",
+              "address": "Rua Eduardo Pinto da Rocha, 3320 - Vila Osternack - Curitiba - PR",
+              "fone": "(41) 3332-1162"
+              },
+              {
+              "name": "UPS Tatuquara",
+              "category": "13 Batalhão",
+              "address": "Rua Enette Dubard, em frente ao n°740 - Tatuquara - Curitiba - PR",
+              "fone": "(41) 3396-3325"
+              },
+              {
+              "name": "Sede do 23º BPM",
+              "category": "23 Batalhão",
+              "address": "Rua Brazílio de Araújo, 458 - Cidade Industrial de Curitiba (CIC) - Neoville - Curitiba - PR",
+              "fone": "(41) 3316-6700"
+              },
+              {
+              "name": "1ª COMPANHIA 23º BPM",
+              "category": "23 Batalhão",
+              "address": "Rua Davi Xavier da Silva  (Praça Central) - UPS Vila Nossa Senhora da Luz",
+              "fone": "(41) 3327-6522"
+              },
+              {
+              "name": "2ª COMPANHIA 23º BPM",
+              "category": "23 Batalhão",
+              "address": "Estrada Velha do Barigui x Rua Herecê Fernandes - UPS Vila Sabará",
+              "fone": "(41) 3229-0380 "
+              },
+              {
+              "name": "Guarda Municipal",
+              "category": "Outros",
+              "address": "",
+              "fone": "153"
+              },
+              {
+              "name": "Polícia Militar",
+              "category": "Outros",
+              "address": "",
+              "fone": "190"
+              },
+              {
+              "name": "Polícia Rodoviária Federal",
+              "category": "Outros",
+              "address": "",
+              "fone": "191"
+              },
+              {
+              "name": "Samu",
+              "category": "Outros",
+              "address": "",
+              "fone": "192"
+              },
+              {
+              "name": "Corpo de Bombeiros",
+              "category": "Outros",
+              "address": "",
+              "fone": "193"
+              },
+              {
+              "name": "Polícia Civil",
+              "category": "Outros",
+              "address": "",
+              "fone": "197"
+              },
+              {
+              "name": "Defesa Civil",
+              "category": "Outros",
+              "address": "",
+              "fone": "199"
+              },
+              {
+              "name": "Polícia Civil",
+              "category": "Polícia Civil",
+              "address": "Rua José Loureiro 540 - Centro - 80010-000 - Curitiba - PR",
+              "fone": "41 3883-8100"
+              },
+              {
+              "name": "Instituto Médico Legal",
+              "category": "Política Científica",
+              "address": "Rua Paulo Turkiewicz, 150 - Tarumã - 82821-030 - Curitiba - PR",
+              "fone": "41 3361-7200"
+              },
+              {
+              "name": "Hospital do Trabalhador",
+              "category": "Principais Hospitais",
+              "address": "Av. Rep. Argentina, 4406 - Novo Mundo, Curitiba - PR, 81050-000",
+              "fone": "(41) 3212-5700"
+              },
+              {
+              "name": "Hospital Cajuru",
+              "category": "Principais Hospitais",
+              "address": "Av. São José, 300 - Cristo Rei, Curitiba - PR, 80050-350",
+              "fone": "(41) 3271-3000"
+              },
+              {
+              "name": "Hospital Universitário Evangélico de Curitiba",
+              "category": "Principais Hospitais",
+              "address": "Alameda Augusto Stellfeld, 1908 - Bigorrilho - Curitiba - PR, 80730-150",
+              "fone": "(41) 3240-5000"
+              },
+              {
+              "name": "Hospital Angelina Caron",
+              "category": "Principais Hospitais",
+              "address": "Rodovia do Caqui, 1150 - Centro, Campina Grande do Sul - PR, 83430-000",
+              "fone": "(41) 3679-8100"
+              }
+              ]
+}

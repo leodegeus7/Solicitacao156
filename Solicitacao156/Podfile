@@ -8,10 +8,17 @@ target 'Solicitacao156' do
   # Pods for Solicitacao156
 
   pod 'Firebase/Core'
+pod 'Fabric', '~> 1.7.2'
+pod 'Crashlytics', '~> 3.9.3'
+  pod 'Firebase/RemoteConfig'
+  pod 'Firebase/Performance'
   pod 'FirebaseUI/Auth'
   pod 'FirebaseUI/Facebook'
   pod 'Firebase/Database'
   pod 'GoogleSignIn'
+  pod 'SwiftyAttributes'
+  pod 'Kingfisher', '~> 4.0'
+  pod 'DZNEmptyDataSet'
   target 'Solicitacao156Tests' do
     inherit! :search_paths
     # Pods for testing

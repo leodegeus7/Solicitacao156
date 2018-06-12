@@ -1,0 +1,44 @@
+{
+    "array": [
+              {
+              "question": "Como posso ajudar alguém em risco social? Para qual telefone devo ligar?",
+              "answer": "Sua ajuda é fundamental para que a Prefeitura de Curitiba, através do Serviço de Assistência Social, possa realizar a abordagem às pessoas que encontram-se em risco social, moradores de rua e usuários de drogas. Ligue para o serviço 156."
+              },
+              {
+              "question": "Como identificar pessoas em risco social?",
+              "answer": "São pessoas que podem estar desabrigadas, perdidas, usuários de alcool ou/e outras drogas na rua ou ainda pessoas caídas pelos logradouros. Ligue para o serviço 156."
+              },
+              {
+              "question": "O que posso fazer ao visualizar entulhos na calçada ou via pública?",
+              "answer": "Lixo e outros tipos de entulho, além de serem prejudiciais ao meio ambiente, em caso de chuva podem entupir a rede de esgoto e aguas pluviais. Ligue para o Serviço 156."
+              },
+              {
+              "question": "Tenho entulhos para descatar? O que posso fazer?",
+              "answer": "Caso tenha entulhos para descarte solicite o recolhimento e descarte adequado. Ligue para o Serviço 156."
+              },
+              {
+              "question": "O que posso fazer em casos de veículos estacionados irregularmente?",
+              "answer": "Em casos de veículos estacionados de forma irregular, ligue para o serviço 156."
+              },
+              {
+              "question": "O que posso fazer ao visualizar terrenos baldios com mato ou servindo de depósitos de lixo?",
+              "answer": "Muitos terrenos abandonados estão com mato alto ou com lixo acumulado. Ligue para o serviço 156."
+              },
+              {
+              "question": "O que posso fazer ao constatar falhas de iluminação pública? Falta de lâmpadas ou iluminação insuficiente?",
+              "answer": "Ao constatar lampadas quebradas ou ineficientes ligue para o serviço 156."
+              },
+              {
+              "question": "O que posso fazer ao constatar problemas na sinalização de trânsito?",
+              "answer": "A falta de sinalização de transito pode acarretar risco de acidentes. Ligue para o  serviço 156."
+              },
+              {
+              "question": "O que fazer quando um estabelecimento comercial está produzindo poluição sonora?",
+              "answer": "Som alto em estabelecimentos comerciais ou industriais podem ser denunciado no serviço 156."
+              },
+              {
+              "question": "O que fazer quando observar ruas em mau estado de conservação, com buracos ou saliencias?",
+              "answer": "Ruas ou calçadas em mau estado de conservação ligue para o serviço 156."
+              }
+              ]
+}
