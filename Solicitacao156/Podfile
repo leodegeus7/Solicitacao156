@@ -11,14 +11,24 @@ target 'Solicitacao156' do
 pod 'Fabric', '~> 1.7.2'
 pod 'Crashlytics', '~> 3.9.3'
   pod 'Firebase/RemoteConfig'
+  pod 'Cosmos', '~> 16.0'
   pod 'Firebase/Performance'
   pod 'FirebaseUI/Auth'
   pod 'FirebaseUI/Facebook'
   pod 'Firebase/Database'
+  pod 'Firebase/Messaging'
   pod 'GoogleSignIn'
   pod 'SwiftyAttributes'
   pod 'Kingfisher', '~> 4.0'
   pod 'DZNEmptyDataSet'
+  
+  post_install do |installer|
+      installer.pods_project.build_configurations.each do |config|
+          config.build_settings.delete('CODE_SIGNING_ALLOWED')
+          config.build_settings.delete('CODE_SIGNING_REQUIRED')
+      end
+  end
+  
   target 'Solicitacao156Tests' do
     inherit! :search_paths
     # Pods for testing

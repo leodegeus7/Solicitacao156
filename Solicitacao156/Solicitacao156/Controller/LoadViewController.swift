@@ -9,23 +9,64 @@
 import UIKit
 import FirebaseRemoteConfig
 import FirebaseAuth
+import SystemConfiguration
+
+public class Reachability {
+    
+    class func isConnectedToNetwork() -> Bool {
+        
+        var zeroAddress = sockaddr_in(sin_len: 0, sin_family: 0, sin_port: 0, sin_addr: in_addr(s_addr: 0), sin_zero: (0, 0, 0, 0, 0, 0, 0, 0))
+        zeroAddress.sin_len = UInt8(MemoryLayout.size(ofValue: zeroAddress))
+        zeroAddress.sin_family = sa_family_t(AF_INET)
+        
+        let defaultRouteReachability = withUnsafePointer(to: &zeroAddress) {
+            $0.withMemoryRebound(to: sockaddr.self, capacity: 1) {zeroSockAddress in
+                SCNetworkReachabilityCreateWithAddress(nil, zeroSockAddress)
+            }
+        }
+        
+        var flags: SCNetworkReachabilityFlags = SCNetworkReachabilityFlags(rawValue: 0)
+        if SCNetworkReachabilityGetFlags(defaultRouteReachability!, &flags) == false {
+            return false
+        }
+        
+        /* Only Working for WIFI
+         let isReachable = flags == .reachable
+         let needsConnection = flags == .connectionRequired
+         
+         return isReachable && !needsConnection
+         */
+        
+        // Working for Cellular and WIFI
+        let isReachable = (flags.rawValue & UInt32(kSCNetworkFlagsReachable)) != 0
+        let needsConnection = (flags.rawValue & UInt32(kSCNetworkFlagsConnectionRequired)) != 0
+        let ret = (isReachable && !needsConnection)
+        
+        return ret
+        
+    }
+}
 
 class LoadViewController: UIViewController {
     fileprivate(set) var auth:Auth?
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
-        getToken { (bool) in
-            self.updateData { (bool) in
-                if bool {
-                    let mainController = MainTabBarController()
-                    self.present(mainController, animated: true) {
-                        
+        if Reachability.isConnectedToNetwork(){
+            wakeUpServer()
+            getToken { (bool) in
+                self.updateData { (bool) in
+                    if bool {
+                        let mainController = MainTabBarController()
+                        self.present(mainController, animated: true) {
+                            
+                        }
                     }
                 }
             }
+        } else {
+            Util.createMessageAlertController(title: "Atenção", message: "Parece que seu celular não esta conectado na internet, conecte para abrir o aplicativo.", okMessage: "Ok", viewController: self)
         }
+        
         
         
         // Do any additional setup after loading the view.
@@ -45,11 +86,16 @@ class LoadViewController: UIViewController {
             if let user = user {
                 Singleton.shared.user = user
                 user.getIDToken(completion: { (token, error) in
-                    self.updateUser()
-                    self.createOrUpdateKeyChainAccount(token!, completion: { (token) in
-                        completion(true)
-                    })
                     
+                    if let _ = error {
+                        print(error!.localizedDescription)
+                        Util.createMessageAlertController(title: "Atenção", message: "Tivemos problemas ao conectar aos nossos servidores", okMessage: "Ok", viewController: self)
+                    } else {
+                        self.updateUser()
+                        self.createOrUpdateKeyChainAccount(token!, completion: { (token) in
+                            completion(true)
+                        })
+                    }
                 })
                 
                 
@@ -83,6 +129,14 @@ class LoadViewController: UIViewController {
             if let _ = user.photoURL {
                 _ = database.update(photo: (user.photoURL?.absoluteString)!)
             }
+        }
+    }
+    
+    func wakeUpServer() {
+        let network = NetworkSetup()
+        var re = Requisition()
+        re.numberId = 1
+        network.getRequisition(requisition: re) { (_) in
         }
     }
     

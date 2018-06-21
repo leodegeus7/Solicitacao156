@@ -16,13 +16,12 @@ class CompleteInfoViewController: UIViewController {
     @IBOutlet weak var cpfField: UITextField!
     @IBOutlet weak var foneField: UITextField!
     @IBOutlet weak var cepField: UITextField!
-    @IBOutlet weak var completeButton: UIButton!
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        completeButton.setTitleColor(Constants.color, for: .normal)
         
-        
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Enviar", style: .done, target: self, action: #selector(CompleteInfoViewController.buttonCompleteTap))
 
         
         
@@ -37,6 +36,7 @@ class CompleteInfoViewController: UIViewController {
                 let cep = value?["cep"] as? String ?? ""
                 let cpf = value?["cpf"] as? String ?? ""
                 let fone = value?["fone"] as? String ?? ""
+                
                 
                 DispatchQueue.main.async {
                     self.cpfField.text = cpf
@@ -88,6 +88,9 @@ class CompleteInfoViewController: UIViewController {
         let p1 = dataBaseHelper.update(cep: cepField.text!)
         let p2 = dataBaseHelper.update(cpf: cpfField.text!)
         let p3 = dataBaseHelper.update(fone: foneField.text!)
+        if let uuid = UIDevice.current.identifierForVendor?.uuidString {
+            dataBaseHelper.add(device: uuid)
+        }
         if p1 && p2 && p3 {
             print("deu")
             closeApp()

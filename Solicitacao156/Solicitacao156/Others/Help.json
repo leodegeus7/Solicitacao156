@@ -1,0 +1,20 @@
+{
+    "array": [
+              {
+              "question": "Como verificar um telefone útil?",
+              "answer": "Na tela inicial, clique em “CONTATOS ÚTEIS”, onde serão listados os principais telefones da Cidade de Curitiba. Clicando sobre eles, duas opções aparecerão: “LIGAR” ou “INFORMAÇÕES”."
+              },
+              {
+              "question": "Como acompanhar o status do serviço que solicitei?",
+              "answer": "Na tela inicial, clique em “Minhas Solicitações”, digite o número do protocolo corresponde a sua solicitação. Com isso, será listado todo o histórico de movimentação do serviço solicitado no sistema 156."
+              },
+              {
+              "question": "Como visualizar o dicionário de dados?",
+              "answer": "Na tela inicial, clique em “DICIONÁRIO DE DADOS”, lá estarão listados os principais termos utilizados nos documentos e dados fornecidos no site de dados abertos da Prefeitura de Curitiba."
+              },
+              {
+              "question": "Minha pergunta não está na lista?",
+              "answer": "Na tela incial, clique em “SOBRE”, nessa tela estão listados os nomes dos desenvolvedores do produto. Clique sobre um dele e mande nos um e-mail."
+              }
+              ]
+}

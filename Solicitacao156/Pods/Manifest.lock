@@ -5,6 +5,7 @@ PODS:
   - Bolts/AppLinks (1.9.0):
     - Bolts/Tasks
   - Bolts/Tasks (1.9.0)
+  - Cosmos (16.0.0)
   - Crashlytics (3.9.3):
     - Fabric (~> 1.7.2)
   - DZNEmptyDataSet (1.8.1)
@@ -24,6 +25,9 @@ PODS:
   - Firebase/Database (5.0.1):
     - Firebase/CoreOnly
     - FirebaseDatabase (= 5.0.0)
+  - Firebase/Messaging (5.0.1):
+    - Firebase/CoreOnly
+    - FirebaseMessaging (= 3.0.0)
   - Firebase/Performance (5.0.1):
     - Firebase/Core
     - FirebasePerformance (= 2.0.0)
@@ -48,6 +52,11 @@ PODS:
     - leveldb-library (~> 1.18)
   - FirebaseInstanceID (3.0.0):
     - FirebaseCore (~> 5.0)
+  - FirebaseMessaging (3.0.0):
+    - FirebaseCore (~> 5.0)
+    - FirebaseInstanceID (~> 3.0)
+    - GoogleToolboxForMac/Logger (~> 2.1)
+    - Protobuf (~> 3.1)
   - FirebasePerformance (2.0.0):
     - FirebaseAnalytics (~> 5.0)
     - FirebaseInstanceID (~> 3.0)
@@ -107,11 +116,13 @@ PODS:
   - SwiftyAttributes (4.2.0)
 
 DEPENDENCIES:
+  - Cosmos (~> 16.0)
   - Crashlytics (~> 3.9.3)
   - DZNEmptyDataSet
   - Fabric (~> 1.7.2)
   - Firebase/Core
   - Firebase/Database
+  - Firebase/Messaging
   - Firebase/Performance
   - Firebase/RemoteConfig
   - FirebaseUI/Auth
@@ -123,6 +134,7 @@ DEPENDENCIES:
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - Bolts
+    - Cosmos
     - Crashlytics
     - DZNEmptyDataSet
     - Fabric
@@ -135,6 +147,7 @@ SPEC REPOS:
     - FirebaseCore
     - FirebaseDatabase
     - FirebaseInstanceID
+    - FirebaseMessaging
     - FirebasePerformance
     - FirebaseRemoteConfig
     - FirebaseSwizzlingUtilities
@@ -151,6 +164,7 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Bolts: ac6567323eac61e203f6a9763667d0f711be34c8
+  Cosmos: 7bcee0fa858a9355a214f2a181be5dffcee42c81
   Crashlytics: dbb07d01876c171c5ccbdf7826410380189e452c
   DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
   Fabric: f8d42c893bb187326a7968b62abe55c36a987a46
@@ -163,6 +177,7 @@ SPEC CHECKSUMS:
   FirebaseCore: cafc814b2d84fc8733f09e653041cc2165332ad7
   FirebaseDatabase: 697eb53e5b4fe7cd4fa8756c1f82a9fca011345f
   FirebaseInstanceID: 83e0040351565df711a5db3d8ebe5ea21aca998a
+  FirebaseMessaging: f2360a966ecfb0d14facf0fbdf306efc2df0ddbe
   FirebasePerformance: 1ec6c40e5dad2543ca4c4f25d15168bde6322c2c
   FirebaseRemoteConfig: 3c57e4644bd6976b671ae0b725cd709f198bd1f5
   FirebaseSwizzlingUtilities: 6c22677c50d0b6f5f0dc637c1233f13694a3003f
@@ -177,6 +192,6 @@ SPEC CHECKSUMS:
   Protobuf: 8a9838fba8dae3389230e1b7f8c104aa32389c03
   SwiftyAttributes: da052e36f8950382016145969d95481c14d2d328
 
-PODFILE CHECKSUM: 71c74077a8f7ad26455b8fd6520df26009eb8ca8
+PODFILE CHECKSUM: 40b26482147f3fddde60162d4e1acee3e6d6615e
 
 COCOAPODS: 1.5.0

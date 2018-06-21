@@ -120,6 +120,7 @@ class SolicitacoesTableViewController: UITableViewController, DZNEmptyDataSetDel
     @objc func openProfile() {
         let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
         let controller = storyboard.instantiateViewController(withIdentifier: "LoginController") as? LoginViewController
+        controller?.solicitacao = self
         self.navigationController?.pushViewController(controller!, animated: true)
     }
     

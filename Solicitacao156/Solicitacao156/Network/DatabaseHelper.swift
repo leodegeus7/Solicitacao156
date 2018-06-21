@@ -23,6 +23,10 @@ class DatabaseHelper: NSObject {
         return updateFieldOfUser(dictionary: ["fone":fone])
     }
     
+    func add(device:String) -> Bool {
+        return addDevice(device: device)
+    }
+    
     func update(cpf:String) -> Bool {
         return updateFieldOfUser(dictionary: ["cpf":cpf])
     }
@@ -35,6 +39,20 @@ class DatabaseHelper: NSObject {
         return updateFieldOfUser(dictionary: ["photo":photo])
     }
 
+    private func addDevice(device:String) -> Bool {
+        
+        if let _ = Singleton.shared.user {
+            var ref: DatabaseReference!
+            
+            ref = Database.database().reference()
+            let user = ref.child("users/\(Singleton.shared.user.uid)")
+            let devices = user.child("devices")
+            devices.child(device).setValue("")
+            return true
+        } else {
+            return false
+        }
+    }
     
     private func updateFieldOfUser(dictionary:Dictionary<String,String>) -> Bool {
         

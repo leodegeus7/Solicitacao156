@@ -24,6 +24,8 @@ class LoginViewController: UIViewController,FUIAuthDelegate {
     fileprivate(set) var authUI: FUIAuth?
     fileprivate(set) var authStateListenerHandle: AuthStateDidChangeListenerHandle?
     
+    var solicitacao:SolicitacoesTableViewController?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         imageUser.layer.cornerRadius = imageUser.frame.height/2
@@ -42,8 +44,11 @@ class LoginViewController: UIViewController,FUIAuthDelegate {
         updateButton.setTitleColor(UIColor.white, for: .normal)
         
         self.auth = Auth.auth()
+        
         self.authUI = FUIAuth.defaultAuthUI()
+        self.authUI?.customStringsBundle = Bundle(for: SignUp.self)
         self.authUI?.delegate = self
+        
         let providers: [FUIAuthProvider] = [
             FUIFacebookAuth()
         ]
@@ -78,11 +83,7 @@ class LoginViewController: UIViewController,FUIAuthDelegate {
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        if self.authIsOpen {
-            self.authIsOpen = false
-            self.navigationController?.popViewController(animated: false)
-            
-        }
+
     }
     
     func updateViewWithProfile() {
@@ -117,6 +118,15 @@ class LoginViewController: UIViewController,FUIAuthDelegate {
         }
     }
     
+    func authPickerViewController(forAuthUI authUI: FUIAuth) -> FUIAuthPickerViewController {
+        let controller = FUIAuthPickerViewController(authUI: authUI)
+        controller.view.backgroundColor = Constants.color.lighter(by: 95).withAlphaComponent(0.6)
+        
+        
+
+        return controller
+    }
+    
     func updateUser() {
         if let user = Singleton.shared.user {
             let database = DatabaseHelper()
@@ -134,6 +144,8 @@ class LoginViewController: UIViewController,FUIAuthDelegate {
             }
         }
     }
+    
+
     
     func authUI(_ authUI: FUIAuth, didSignInWith user: User?, error: Error?) {
         if let user = user {
@@ -157,11 +169,19 @@ class LoginViewController: UIViewController,FUIAuthDelegate {
         switch errorCode {
         case FUIAuthErrorCode.userCancelledSignIn.rawValue:
             print("User cancelled sign-in");
+            DispatchQueue.main.async {
+                self.navigationController?.popViewController(animated: false)
+            }
+           
             break
             
         default:
             let detailedError = (authError as NSError).userInfo[NSUnderlyingErrorKey] ?? authError
             print("Login error: \((detailedError as! NSError).localizedDescription)");
+            DispatchQueue.main.async {
+                self.navigationController?.popViewController(animated: false)
+                Util.createMessageAlertController(title: "Atenção", message: "Problema ao logar em sua conta, contate o administrador", okMessage: "Ok", viewController: self.solicitacao!)
+            }
         }
     }
     
@@ -204,6 +224,7 @@ class LoginViewController: UIViewController,FUIAuthDelegate {
     @IBAction func signOutTap(_ sender: Any) {
         signOut { (bool) in
             if bool {
+                Singleton.shared.user = nil
                 self.navigationController?.popViewController(animated: true)
                 print("Signout")
             } else {
@@ -265,5 +286,30 @@ class LoginViewController: UIViewController,FUIAuthDelegate {
         }
     }
     
+}
+
+extension UIColor {
+
+    func lighter(by percentage: CGFloat = 30.0) -> UIColor {
+        return self.adjustBrightness(by: abs(percentage))
+    }
+
+    func darker(by percentage: CGFloat = 30.0) -> UIColor {
+        return self.adjustBrightness(by: -abs(percentage))
+    }
+
+    func adjustBrightness(by percentage: CGFloat = 30.0) -> UIColor {
+        var h: CGFloat = 0, s: CGFloat = 0, b: CGFloat = 0, a: CGFloat = 0
+        if self.getHue(&h, saturation: &s, brightness: &b, alpha: &a) {
+            if b < 1.0 {
+                let newB: CGFloat = max(min(b + (percentage/100.0)*b, 1.0), 0.0)
+                return UIColor(hue: h, saturation: s, brightness: newB, alpha: a)
+            } else {
+                let newS: CGFloat = min(max(s - (percentage/100.0)*s, 0.0), 1.0)
+                return UIColor(hue: h, saturation: newS, brightness: b, alpha: a)
+            }
+        }
+        return self
+    }
 }
 

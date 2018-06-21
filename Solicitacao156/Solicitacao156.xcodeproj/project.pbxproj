@@ -10,6 +10,9 @@
 		1B21A28E8443113B9A37AF15 /* Pods_Solicitacao156Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAA43D9AA551AA6D8ED29491 /* Pods_Solicitacao156Tests.framework */; };
 		6A4B682AF945C0B3FA390AAF /* Pods_Solicitacao156UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CC8A1A274BE778372EAB669 /* Pods_Solicitacao156UITests.framework */; };
 		70B99C9C9083A5EACC12B2F2 /* Pods_Solicitacao156.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 749FD0DB2CDE14CC088B9D62 /* Pods_Solicitacao156.framework */; };
+		CD6189E220D1505300E41083 /* RatingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6189E120D1505300E41083 /* RatingTableViewCell.swift */; };
+		CD6189E420D150AB00E41083 /* RatingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6189E320D150AB00E41083 /* RatingTableViewController.swift */; };
+		CD6189E620D1545200E41083 /* Rating.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6189E520D1545200E41083 /* Rating.swift */; };
 		CD6C620F20B0DE90001754A5 /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6C620E20B0DE90001754A5 /* Entry.swift */; };
 		CD6C621120B0E087001754A5 /* Requisition.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6C621020B0E087001754A5 /* Requisition.swift */; };
 		CD6C621320B0E20F001754A5 /* SolicitacoesCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6C621220B0E20F001754A5 /* SolicitacoesCellTableViewCell.swift */; };
@@ -32,6 +35,11 @@
 		CD9D663F20D03FA20036F988 /* CardViewQuestions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9D663E20D03FA20036F988 /* CardViewQuestions.swift */; };
 		CD9D664120D040370036F988 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9D664020D040370036F988 /* Question.swift */; };
 		CD9D664320D0445B0036F988 /* Questions.json in Resources */ = {isa = PBXBuildFile; fileRef = CD9D664220D0445B0036F988 /* Questions.json */; };
+		CD9D664520D0553A0036F988 /* HelpTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9D664420D0553A0036F988 /* HelpTableViewCell.swift */; };
+		CD9D664720D056330036F988 /* HelpTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9D664620D056330036F988 /* HelpTableViewController.swift */; };
+		CD9D664920D0574E0036F988 /* Help.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9D664820D0574E0036F988 /* Help.swift */; };
+		CD9D664F20D058340036F988 /* Help.json in Resources */ = {isa = PBXBuildFile; fileRef = CD9D664E20D058340036F988 /* Help.json */; };
+		CD9D665320D1451C0036F988 /* FirebaseAuthUI.strings in Resources */ = {isa = PBXBuildFile; fileRef = CD9D665220D1451C0036F988 /* FirebaseAuthUI.strings */; };
 		CD9E4C9920CCCFA20067BE1E /* ContatosTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9E4C9820CCCFA10067BE1E /* ContatosTableViewCell.swift */; };
 		CD9E4C9B20CCD8E40067BE1E /* CardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD9E4C9A20CCD8E40067BE1E /* CardView.xib */; };
 		CD9E4C9D20CCDA3B0067BE1E /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9E4C9C20CCDA3B0067BE1E /* CardView.swift */; };
@@ -93,6 +101,9 @@
 		78F37D538A6B7BBB3964BEC0 /* Pods-Solicitacao156Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Solicitacao156Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Solicitacao156Tests/Pods-Solicitacao156Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		BB01A5CEC2148A69A7AE4B42 /* Pods-Solicitacao156.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Solicitacao156.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Solicitacao156/Pods-Solicitacao156.debug.xcconfig"; sourceTree = "<group>"; };
 		CAA43D9AA551AA6D8ED29491 /* Pods_Solicitacao156Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Solicitacao156Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD6189E120D1505300E41083 /* RatingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingTableViewCell.swift; sourceTree = "<group>"; };
+		CD6189E320D150AB00E41083 /* RatingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingTableViewController.swift; sourceTree = "<group>"; };
+		CD6189E520D1545200E41083 /* Rating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rating.swift; sourceTree = "<group>"; };
 		CD6C620E20B0DE90001754A5 /* Entry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
 		CD6C621020B0E087001754A5 /* Requisition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Requisition.swift; sourceTree = "<group>"; };
 		CD6C621220B0E20F001754A5 /* SolicitacoesCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolicitacoesCellTableViewCell.swift; sourceTree = "<group>"; };
@@ -115,6 +126,11 @@
 		CD9D663E20D03FA20036F988 /* CardViewQuestions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewQuestions.swift; sourceTree = "<group>"; };
 		CD9D664020D040370036F988 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		CD9D664220D0445B0036F988 /* Questions.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Questions.json; sourceTree = "<group>"; };
+		CD9D664420D0553A0036F988 /* HelpTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpTableViewCell.swift; sourceTree = "<group>"; };
+		CD9D664620D056330036F988 /* HelpTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpTableViewController.swift; sourceTree = "<group>"; };
+		CD9D664820D0574E0036F988 /* Help.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Help.swift; sourceTree = "<group>"; };
+		CD9D664E20D058340036F988 /* Help.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Help.json; sourceTree = "<group>"; };
+		CD9D665220D1451C0036F988 /* FirebaseAuthUI.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = FirebaseAuthUI.strings; sourceTree = "<group>"; };
 		CD9E4C9820CCCFA10067BE1E /* ContatosTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContatosTableViewCell.swift; sourceTree = "<group>"; };
 		CD9E4C9A20CCD8E40067BE1E /* CardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardView.xib; sourceTree = "<group>"; };
 		CD9E4C9C20CCDA3B0067BE1E /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
@@ -212,6 +228,10 @@
 				CDDD21E320CAECD900DF4440 /* LoadViewController.swift */,
 				CD9E4C9820CCCFA10067BE1E /* ContatosTableViewCell.swift */,
 				CD9D663A20CF6FC80036F988 /* DicionarioTableViewCell.swift */,
+				CD9D664420D0553A0036F988 /* HelpTableViewCell.swift */,
+				CD9D664620D056330036F988 /* HelpTableViewController.swift */,
+				CD6189E120D1505300E41083 /* RatingTableViewCell.swift */,
+				CD6189E320D150AB00E41083 /* RatingTableViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -224,6 +244,8 @@
 				CDCD246120CC80B800BCF2FA /* Contact.swift */,
 				CD9D663820CF6CD30036F988 /* EntryDic.swift */,
 				CD9D664020D040370036F988 /* Question.swift */,
+				CD9D664820D0574E0036F988 /* Help.swift */,
+				CD6189E520D1545200E41083 /* Rating.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -234,12 +256,14 @@
 				CDCD246320CC846A00BCF2FA /* Fones.json */,
 				CD9D663620CF6C340036F988 /* Dic.json */,
 				CD9D664220D0445B0036F988 /* Questions.json */,
+				CD9D664E20D058340036F988 /* Help.json */,
 				CDE1EAAA20A4F4E300B459D7 /* Constants.swift */,
 				CDE1EA6E20A3CA4A00B459D7 /* AppDelegate.swift */,
 				CDE1EAAE20A4FFFE00B459D7 /* Singleton.swift */,
 				CDFB6D6820B1DDAF003F721F /* Util.swift */,
 				CDE1EA9C20A3CA7300B459D7 /* GoogleService-Info.plist */,
 				CDDD21E520CAF10D00DF4440 /* SignUp.swift */,
+				CD9D665220D1451C0036F988 /* FirebaseAuthUI.strings */,
 			);
 			path = Others;
 			sourceTree = "<group>";
@@ -451,6 +475,9 @@
 							com.apple.Keychain = {
 								enabled = 1;
 							};
+							com.apple.Push = {
+								enabled = 1;
+							};
 						};
 					};
 					CDE1EA7E20A3CA4C00B459D7 = {
@@ -492,6 +519,8 @@
 				CDDD21CF20C9CC0500DF4440 /* list-fat-7-full.png in Resources */,
 				CD9E4C9B20CCD8E40067BE1E /* CardView.xib in Resources */,
 				CDDD21CA20C9AE7D00DF4440 /* logo.png in Resources */,
+				CD9D665320D1451C0036F988 /* FirebaseAuthUI.strings in Resources */,
+				CD9D664F20D058340036F988 /* Help.json in Resources */,
 				CDE1EA7920A3CA4C00B459D7 /* LaunchScreen.storyboard in Resources */,
 				CD8B7F0D20C788D200B71009 /* list-fat-7.png in Resources */,
 				CD9D663720CF6C340036F988 /* Dic.json in Resources */,
@@ -537,6 +566,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Solicitacao156/Pods-Solicitacao156-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/Cosmos/Cosmos.framework",
 				"${BUILT_PRODUCTS_DIR}/DZNEmptyDataSet/DZNEmptyDataSet.framework",
 				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
 				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
@@ -552,6 +582,7 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cosmos.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DZNEmptyDataSet.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
@@ -676,6 +707,8 @@
 				CDE1EAA820A4F3DE00B459D7 /* KeychainConfiguration.swift in Sources */,
 				CDE1EA7120A3CA4A00B459D7 /* LoginViewController.swift in Sources */,
 				CDDD21E120CA2F5C00DF4440 /* ProfileViewController.swift in Sources */,
+				CD9D664720D056330036F988 /* HelpTableViewController.swift in Sources */,
+				CD6189E220D1505300E41083 /* RatingTableViewCell.swift in Sources */,
 				CDE1EABC20A682FC00B459D7 /* SolicitacoesTableViewController.swift in Sources */,
 				CD9E4C9920CCCFA20067BE1E /* ContatosTableViewCell.swift in Sources */,
 				CD9D664120D040370036F988 /* Question.swift in Sources */,
@@ -685,6 +718,7 @@
 				CDE1EAAD20A4FAEE00B459D7 /* CompleteInfoViewController.swift in Sources */,
 				CDDD21E620CAF10D00DF4440 /* SignUp.swift in Sources */,
 				CDDD21D520CA1F3200DF4440 /* AdicionarViewController.swift in Sources */,
+				CD6189E420D150AB00E41083 /* RatingTableViewController.swift in Sources */,
 				CD9D663B20CF6FC80036F988 /* DicionarioTableViewCell.swift in Sources */,
 				CD9D663F20D03FA20036F988 /* CardViewQuestions.swift in Sources */,
 				CD6C621520B0E5DB001754A5 /* EntriesTableViewController.swift in Sources */,
@@ -694,7 +728,10 @@
 				CD6C621120B0E087001754A5 /* Requisition.swift in Sources */,
 				CD6C621720B0E791001754A5 /* EntriesTableViewCell.swift in Sources */,
 				CDE1EA6F20A3CA4A00B459D7 /* AppDelegate.swift in Sources */,
+				CD6189E620D1545200E41083 /* Rating.swift in Sources */,
 				CD8B7F0920C787BB00B71009 /* DicionarioTableViewController.swift in Sources */,
+				CD9D664520D0553A0036F988 /* HelpTableViewCell.swift in Sources */,
+				CD9D664920D0574E0036F988 /* Help.swift in Sources */,
 				CD8B7EFE20C77B3800B71009 /* MainTabBarController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -868,7 +905,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BB01A5CEC2148A69A7AE4B42 /* Pods-Solicitacao156.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				CODE_SIGN_ENTITLEMENTS = Solicitacao156/Solicitacao156.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
@@ -880,7 +917,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.br.leodegeus.Solicitacao156;
+				PRODUCT_BUNDLE_IDENTIFIER = com.leodegeus.Solicitacao156;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
@@ -892,7 +929,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 196E3D18A25BCE03C58ED453 /* Pods-Solicitacao156.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				CODE_SIGN_ENTITLEMENTS = Solicitacao156/Solicitacao156.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
@@ -904,7 +941,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.br.leodegeus.Solicitacao156;
+				PRODUCT_BUNDLE_IDENTIFIER = com.leodegeus.Solicitacao156;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;

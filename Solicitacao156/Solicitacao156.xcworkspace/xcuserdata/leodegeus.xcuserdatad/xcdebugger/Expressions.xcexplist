@@ -6,13 +6,13 @@
          contextName = "closure #1 in ViewController.viewDidLoad():ViewController.swift">
          <PersistentStrings>
             <PersistentString
-               value = "error!">
+               value = "user!.email!">
             </PersistentString>
             <PersistentString
                value = "user?.displayName!">
             </PersistentString>
             <PersistentString
-               value = "user!.email!">
+               value = "error!">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -62,6 +62,14 @@
          <PersistentStrings>
             <PersistentString
                value = "RemoteConfig.remoteConfig().configValue(forKey: &quot;color2&quot;).stringValue">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "AdicionarViewController.textFieldDidBeginEditing(_:):AdicionarViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "textFieldRealYPosition">
             </PersistentString>
          </PersistentStrings>
       </ContextState>

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AdicionarViewController: UIViewController {
+class AdicionarViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var addButton: UIButton!
     @IBOutlet weak var addTextField: UITextField!
@@ -21,9 +21,39 @@ class AdicionarViewController: UIViewController {
         addButton.layer.cornerRadius = self.addTextField.layer.visibleRect.height / 2
         addButton.alpha = 0.9
         self.navigationItem.title = "Adicionar solicitação"
+        self.addTextField.delegate = self
+        NotificationCenter.default.addObserver(self, selector: #selector(AdicionarViewController.keyboardWillShow), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(AdicionarViewController.keyboardWillHide), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
+
+        
         // Do any additional setup after loading the view.
     }
-
+    
+    @objc func keyboardWillShow(notification: NSNotification) {
+        if let keyboardSize = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
+            let distanceBetweenTextfielAndKeyboard = self.view.frame.height - textFieldRealYPosition - keyboardSize.height
+            if distanceBetweenTextfielAndKeyboard < 0 {
+                UIView.animate(withDuration: 0.4) {
+                    self.addButton.transform = CGAffineTransform(translationX: 0.0, y: distanceBetweenTextfielAndKeyboard)
+                }
+            }
+        }
+    }
+    
+    var textFieldRealYPosition: CGFloat = 0.0
+    
+    @objc func keyboardWillHide(notification: NSNotification) {
+        UIView.animate(withDuration: 0.4) {
+            self.addButton.transform = .identity
+        }
+    }
+    
+    
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        textFieldRealYPosition = addButton.frame.origin.y + addButton.frame.height + 50
+        //take in account all superviews from textfield and potential contentOffset if you are using tableview to calculate the real position
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -83,15 +113,6 @@ class AdicionarViewController: UIViewController {
             return nil
         }
     }
+
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

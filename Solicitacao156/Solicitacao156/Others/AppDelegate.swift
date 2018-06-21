@@ -30,7 +30,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         FirebaseApp.configure()
         GTMSessionFetcher.setLoggingEnabled(true)
 
-
+        Fabric.sharedSDK().debug = true
         
         let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
         let loadController = storyboard.instantiateViewController(withIdentifier: "LoadController") as? LoadViewController

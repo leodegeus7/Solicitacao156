@@ -15,6 +15,7 @@
 //
 
 import UIKit
+import FirebaseAnalytics
 
 class CardViewQuestions: UIView {
     
@@ -52,6 +53,12 @@ class CardViewQuestions: UIView {
     @IBAction func showAnswear(_ sender: Any) {
         self.showButton.isHidden = true
         self.answearLabel.isHidden = false
+        
+        if let uuid = UIDevice.current.identifierForVendor?.uuidString {
+            Analytics.logEvent("user_clicked_question", parameters: ["deviceId":uuid])
+        } else {
+            Analytics.logEvent("user_clicked_question", parameters: ["deviceId":"unknown"])
+        }
     }
     
     func dismiss() {

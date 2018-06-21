@@ -88,7 +88,6 @@ class ContatosTableViewController: UITableViewController {
         
         myView.frame = CGRect(x: window.frame.origin.x, y: window.frame.origin.y, width: window.frame.width, height: window.frame.height)
 
-
         myView.clipsToBounds = true
         myView.center = window.center
         myView.backgroundColor = Constants.color.withAlphaComponent(0.5)
